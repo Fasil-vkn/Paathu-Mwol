@@ -144,7 +144,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.BGMFILTER){
     let banned = jid.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
-    if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
+    if (!!message.mention && message.mention[0] == '918136831431@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention.mp3'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
     const array = ['Paathu','Mm','sed','mention','paathu','welcome']
