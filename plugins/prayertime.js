@@ -23,7 +23,7 @@ const renek = "```Not found the city!```"
 	    try {
 		    const response = await got(url);
 		    const json = JSON.parse(response.body);
-		    if (response.statusCode === 200) return await message.client.sendMessage(message.jid,  '*Jadwal Sholat*:\n' +
+		    if (response.statusCode === 200) return await message.client.sendMessage(message.jid,  '*Prayer Times*:\n' +
                     '📅 ```' + json.results.datetime[0].date.gregorian + ' | ' + json.results.location.timezone + '```\n' +
                     '🌏 ```' + json.results.location.city + ' | ' + json.results.location.country + '```\n\n' +
 		    '```Imsak   :``` *' + json.results.datetime[0].times.Imsak + '*\n' + 
