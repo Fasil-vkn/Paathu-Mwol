@@ -1,68 +1,30 @@
+const Asena = require('../events');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const axios = require('axios');
 
-const asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
-const OWNER = "it sends details of owner"
-const GIT = "it sends links"
-const Config = require('../config');
+const Language = require('../language');
+const Lang = Language.getString('wallpaper');
 
-
-if (Config.WORKTYPE == 'private') {
-        asena.addCommand({pattern: 'owner', fromMe: true, deleteCommand: true, desc: OWNER,}, (async (message, match) => {
+Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
     var r_text = new Array ();
     
-    r_text[1] = "*╔═════Paathu🧚🏻‍♀️═════╗*\n           \n*✨️═Paathu═✨️*\n\n*owner fasil - http://Wa.me/+918136831431*\n  \n*🔰instagram:-https://www.instagram.com/mefasil*            \n*╚══════❤❤❤═════╝*\n\n```▷Creator: fasil```"
-
     
-    await message.client.sendMessage(
-        message.jid,(r_text[1]), MessageType.text);
-
-    }));
-
-
-        asena.addCommand({pattern: 'git', fromMe: true, deleteCommand: true, desc: GIT,}, (async (message, match) => {
-
-        var r_text = new Array ();
+   
+  r_text[0] = "https://i.imgur.com/oBLYqk7.jpeg";
     
-        r_text[1] = "*Git links*\n   \n```Paathu Bot```    \n*✨️═Paathu Owner fasil═✨️*\n\n*💘https://github.com/Fasil-vkn/Paathu*\n     \n*💓pikachu═Owner ameer suhail═*\n\n*⚜https://github.com/ameer-kallumthodi/pikachu*    *\n\n⚜yt link to set bot:- https://youtu.be/_D4ZYuUSXjs*"
-
     
-        await message.client.sendMessage(
-            message.jid,(r_text[1]), MessageType.text);
-    
-        }));    
+    var i = Math.floor(1*Math.random())
 
-    }
-    
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    if (Config.WORKTYPE == 'public') {
-        asena.addCommand({pattern: 'owner', fromMe: false, deleteCommand: true, desc: OWNER,}, (async (message, match) => {
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*Fasil*
 
-    var r_text = new Array ();
-    
-    r_text[1] = "*╔═════👰Paathu👰═════╗*\n           \n*✨️═Paathu═✨️*\n\n*owner fasil - http://Wa.me/+918136831431*\n* *\n🔰instagram:-https://www.instagram.com/mefasil*            \n*╚═════❤❤❤═════╝*\n\n*▷Creator: fasil*"
+*owner number wa.me/918136831431?text=Hi*
+*paathu githublink https://github.com/Fasil-vkn/Paathu*
+*saidali liyamol githublink https://github.com/saidalisaid2/LiyaMol*
 
-    
-    await message.client.sendMessage(
-        message.jid,(r_text[1]), MessageType.text);
+`}) 
 
-    }));
-
-
-        asena.addCommand({pattern: 'git', fromMe: false, deleteCommand: true, desc: GIT,}, (async (message, match) => {
-
-        var r_text = new Array ();
-    
-        r_text[1] = "*Git links*\n   \n```Paathu Bot```    \n*💥═Paathu owner fasil═💥*\n\n*💘https://github.com/Fasil-vkn/Paathu*\n     \n💓Pikachu═Owner ameer suhail═*\n\n*⚜https://github.com/ameer-kallumthodi/pikachu*    \n\n⚜yt link to set bot:- https://youtu.be/_D4ZYuUSXjs*"
-
-    
-        await message.client.sendMessage(
-            message.jid,(r_text[1]), MessageType.text);
-    
-        }));    
-
-    }
-
-    
-       
-            
+}));
+        
