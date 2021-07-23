@@ -23,7 +23,7 @@ Project created by <a href="https://github.com/Fasil-vkn">Fasil-vkn</a> to make 
     <img src="https://img.shields.io/github/repo-size/Fasil-vkn/Paathu?color=green&label=Repo%20total%20size&style=plastic">
 <p align="center">
 <a href="https://github.com/Fasil-vkn/followers"><img title="Followers" src="https://img.shields.io/github/followers/Fasil-vkn?color=blue&style=flat-square"></a>
-<a href="https://github.com/Fasil-vkn/Paathu/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Fasil-vkn/Paathu?color=blue&style=flat-square"></a>
+<a href="https://github.com/Fasil-vkn/Paathu/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Fasil-vkn/Paathu?color=green&style=flat-square"></a>
 <a href="https://github.com/Fasil-vkn/Paathu/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Fasil-vkn/Paathu?color=blue&style=flat-square"></a>
 <a href="https://github.com/Fasil-vkn/Paathu/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Fasil-vkn/Paathu?label=Watchers&color=blue&style=flat-square"></a>
 <a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/UNMAINTENED-YES-blue.svg"</a>
