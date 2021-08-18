@@ -1,4 +1,4 @@
-/* Copyright (C) 2020 ameer-kallumthodi.
+/* Copyright (C) 2020 afnanplk.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
@@ -46,7 +46,7 @@ notheri()
 var ldc = ''
 if (Config.LANG == 'AZ') ldc = '*Bağlantı Aşkarlandı!*'
 if (Config.LANG == 'TR') ldc = '*‎Link Tespit Edildi!*'
-if (Config.LANG == 'EN') ldc = '*ഇത് ഞാനും ചെയ്യില്ലനീയും ചെയ്യില്ല* \n 😅 *arod parayan aar kelkaan* \n *edth purath aakiyathin shesham aan parayunne* 😅😅'
+if (Config.LANG == 'EN') ldc = '*ith njanum vilikkilla neeyum villikilla* \n 😅 *arod parayan aar kelkaan* \n *edth purath aakiyathin shesham aan parayunne* 😅😅'
 if (Config.LANG == 'ML') ldc = '*ലിങ്ക് കണ്ടെത്തി!*'
 if (Config.LANG == 'ID') ldc = '*Tautan Terdeteksi!*'
 if (Config.LANG == 'PT') ldc = '*Link Detectado!*'
@@ -54,17 +54,17 @@ if (Config.LANG == 'RU') ldc = '*Ссылка обнаружена!*'
 if (Config.LANG == 'HI') ldc = '*लिंक का पता चला!*'
 if (Config.LANG == 'ES') ldc = '*Enlace Detectado!*'
 Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
-    if (therikick_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
+    if (therikick_var == 'true' && message.jid !== '918136831431-1622800343@g.us') {
         let regex1 = new RegExp('thayoli')
-        let regex2 = new RegExp('Myre')
-        let regex3 = new RegExp('poorimone')
-        let regex4 = new RegExp('poor')
-        let regex5 = new RegExp('https://chat.whatsapp.com/')
-        let regex6 = new RegExp('andi')
-        let regex7 = new RegExp('mmmmmmmmmmm')
-        let regex8 = new RegExp('umban')
-        let regex9 = new RegExp('oombi')
-        let regex10 = new RegExp('Myr')
+        let regex2 = new RegExp('thaayoli')
+        let regex3 = new RegExp('thayolli')
+        let regex4 = new RegExp('thaayolli')
+        let regex5 = new RegExp('thayyoli')
+        let regex6 = new RegExp('Thayoli')
+        let regex7 = new RegExp('Thaayoli')
+        let regex8 = new RegExp('Thayolli')
+        let regex9 = new RegExp('Thaayolli')
+        let regex10 = new RegExp('Thayyoli')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
